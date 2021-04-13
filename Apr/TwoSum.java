@@ -2,7 +2,7 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
         int i=0,j=1;
         for(i=0;i<nums.length-1;i++){
-            for(j=i+1;j<nums.length;j++){   //I don't know why here j=i+1; I use j=1 then it's wrong
+            for(j=i+1;j<nums.length;j++){   //If i use j=1, the nafter the first round of i, j begins from 1 again, so here is j=i+1
                 if (nums[i]==target-nums[j]){
                     return new int[]{i,j};
                 }
